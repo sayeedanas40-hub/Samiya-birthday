@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Dr.Samiya Nooreen❤️</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:#050509;color:white;font-family:Georgia,serif;overflow-x:hidden}
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px 20px;position:relative;overflow:hidden}
+.content{max-width:650px;width:100%;position:relative;z-index:2}
+button{border:0;padding:16px 30px;border-radius:50px;background:linear-gradient(135deg,#ff4f81,#ff789e);color:white;font-size:16px;box-shadow:0 10px 35px #ff4f8140;cursor:pointer}
+button:active{transform:scale(.94)}
+.stars{position:absolute;inset:0;background-image:radial-gradient(#fff 1px,transparent 1px),radial-gradient(#fff 1px,transparent 1px);background-size:70px 70px,110px 110px;background-position:0 0,30px 50px;opacity:.35;animation:stars 20s linear infinite}
+@keyframes stars{from{transform:translateY(0)}to{transform:translateY(70px)}}
+#home{background:radial-gradient(circle at 50% 40%,#351321,#09070c 55%,#050509)}
+.eyebrow{letter-spacing:5px;text-transform:uppercase;font-size:12px;color:#d9b6c2;margin-bottom:25px}
+h1{font-size:clamp(48px,14vw,90px);line-height:1;margin-bottom:25px}
+h1 span{color:#ff6b98}
+.subtitle{font-size:19px;line-height:1.8;color:#d6d3d6;margin-bottom:35px}
+.float-heart{position:absolute;color:#ff6b98;opacity:.5;font-size:25px;animation:heartFloat 6s infinite ease-in-out}
+@keyframes heartFloat{50%{transform:translateY(-30px)}}
+#story{background:linear-gradient(#08060b,#160a11)}
+.story-box{background:#ffffff0a;border:1px solid #ffffff18;padding:35px 25px;border-radius:25px;backdrop-filter:blur(15px)}
+.story-box h2{font-size:38px;margin-bottom:25px}
+.story-box p{font-size:18px;line-height:1.9;color:#ddd}
+#messages{background:radial-gradient(circle,#24101a,#050509)}
+.message-title{font-size:36px;margin-bottom:35px}
+.hearts{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-bottom:30px}
+.heart-btn{width:65px;height:65px;padding:0;font-size:28px;background:#ffffff0c;border:1px solid #ffffff22;box-shadow:none}
+.hidden-message{min-height:80px;font-size:19px;line-height:1.7;color:#f0c6d4}
+#cake{background:linear-gradient(#08060b,#1b0b13)}
+.cake-title{font-size:38px;margin-bottom:30px}
+.cake{font-size:100px;margin:20px 0;animation:float 2s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.cake-text{color:#ccc;font-size:18px;line-height:1.7;margin-bottom:30px}
+#game{background:radial-gradient(circle at center,#30111d,#050509 70%)}
+.game-title{font-size:38px;margin-bottom:22px}
+.game-question{font-size:20px;line-height:1.6;color:#ddd;margin-bottom:30px}
+.choices{display:flex;flex-direction:column;gap:15px;max-width:340px;margin:auto}
+.choice{width:100%;background:#ffffff0b;border:1px solid #ffffff20;box-shadow:none}
+#answerText{min-height:100px;margin-top:30px;font-size:19px;line-height:1.8;color:#ff9fbd}
+#letter{background:radial-gradient(circle at center,#2b111b,#050509 70%)}
+.letter-card{background:#fffaf5;color:#35242a;padding:38px 28px;border-radius:8px;box-shadow:0 25px 80px #00000080;text-align:left;transform:rotate(-1deg)}
+.letter-card h2{text-align:center;font-size:32px;margin-bottom:28px;color:#9e405f}
+.letter-line{opacity:0;transform:translateY(15px);transition:all .8s ease;font-size:18px;line-height:1.9;margin-bottom:13px}
+.letter-line.show{opacity:1;transform:translateY(0)}
+.letter-sign{text-align:right;margin-top:25px;font-size:20px;color:#9e405f}
+#memory{background:radial-gradient(circle at center,#32121f,#050509 72%)}
+.memory-title{font-size:38px;margin-bottom:18px}
+.memory-subtitle{color:#cfc7ca;font-size:17px;line-height:1.7;margin-bottom:30px}
+.memory-card{position:relative;min-height:250px;display:flex;align-items:center;justify-content:center;padding:35px 25px;border-radius:25px;background:linear-gradient(145deg,#ffffff12,#ffffff05);border:1px solid #ffffff20;box-shadow:0 25px 70px #00000070;overflow:hidden;margin-bottom:30px}
+.memory-cover{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(145deg,#351522,#12090f);transition:all .8s ease;z-index:2}
+.memory-cover .lock{font-size:60px;margin-bottom:15px}
+.memory-cover p{color:#ddd;font-size:17px}
+.memory-card.revealed .memory-cover{opacity:0;transform:scale(1.15);pointer-events:none}
+.memory-content{opacity:0;transform:scale(.8);transition:all .8s ease}
+.memory-card.revealed .memory-content{opacity:1;transform:scale(1)}
+.memory-number{color:#ff789e;letter-spacing:4px;font-size:12px;margin-bottom:18px}
+.memory-text{font-size:22px;line-height:1.8}
+.memory-heart{font-size:35px;margin-top:18px}
+#memoryButton{margin-bottom:15px}
+.memory-counter{color:#aaa;font-size:13px}
+#final{background:radial-gradient(circle at center,#381321,#08060a 65%)}
+.final-heart{font-size:75px;animation:beat 1.2s infinite;margin-bottom:20px}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+.final-title{font-size:clamp(40px,11vw,70px);margin-bottom:25px}
+.final-text{font-size:19px;line-height:1.9;color:#ddd}
+.signature{margin-top:35px;font-size:24px;color:#ff789e}
+.confetti{position:fixed;width:8px;height:8px;top:-10px;z-index:100;animation:fall 4s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+</style>
+</head>
+<body>
+
+<section id="home">
+<div class="stars"></div>
+<div class="float-heart" style="left:10%;top:20%">♡</div>
+<div class="float-heart" style="right:12%;top:30%">♥</div>
+<div class="float-heart" style="left:18%;bottom:18%">♡</div>
+<div class="float-heart" style="right:20%;bottom:15%">♥</div>
+<div class="content">
+<div class="eyebrow">A little surprise</div>
+<h1>For <span>Sammu jaan</span> ❤️</h1>
+<p class="subtitle">A little something I made just for you.<br>Take your time... there's more waiting inside.</p>
+<button onclick="goTo('story')">Open Your Surprise</button>
+</div>
+</section>
+
+<section id="story">
+<div class="content">
+<div class="story-box">
+<h2>Happy Birthday, Samiya</h2>
+<p>Some people come into our lives and quietly become a part of everything.<br><br>You are one of those people for me.<br><br>You are my first love, my last love, and the person I want to keep choosing, always.</p>
+<br>
+<button onclick="goTo('messages')">There is more ❤️</button>
+</div>
+</div>
+</section>
+
+<section id="messages">
+<div class="content">
+<h2 class="message-title">A Few Things I Want You To Know</h2>
+<div class="hearts">
+<button class="heart-btn" onclick="showMessage(0)">❤️</button>
+<button class="heart-btn" onclick="showMessage(1)">❤️</button>
+<button class="heart-btn" onclick="showMessage(2)">❤️</button>
+<button class="heart-btn" onclick="showMessage(3)">❤️</button>
+</div>
+<div class="hidden-message" id="hiddenMessage">Tap a heart...</div>
+<br><br>
+<button onclick="goTo('cake')">One Last Surprise 🎂</button>
+</div>
+</section>
+
+<section id="cake">
+<div class="content">
+<h2 class="cake-title">Make A Wish 🎂</h2>
+<div class="cake">🎂</div>
+<p class="cake-text">Close your eyes for a second...<br>Make your wish.<br><br>Now tap the button.</p>
+<button onclick="celebrate()">Make It Come True ✨</button>
+</div>
+</section>
+
+<section id="game">
+<div class="content">
+<h2 class="game-title">A Little Question For You ❤️</h2>
+<p class="game-question">What do you think I love most about you?</p>
+<div class="choices">
+<button class="choice" onclick="answer(0)">Your Smile 😊</button>
+<button class="choice" onclick="answer(1)">Your Heart ❤️</button>
+<button class="choice" onclick="answer(2)">Everything About You ✨</button>
+</div>
+<p id="answerText">Choose one...</p>
+<br>
+<button onclick="goTo('letter')">A Letter For You 💌</button>
+</div>
+</section>
+
+<section id="letter">
+<div class="content">
+<div class="letter-card">
+<h2>My Letter To You</h2>
+<p class="letter-line">Dear Samiya,</p>
+<p class="letter-line">I don't think words will ever be enough to explain what you mean to me.</p>
+<p class="letter-line">You have a place in my heart that nobody else could ever take.</p>
+<p class="letter-line">My favourite part isn't just having you in my life... it's knowing that I get to make memories with you.</p>
+<p class="letter-line">Whatever the future brings, I hope we always find our way back to each other.</p>
+<p class="letter-line">You are my first love, my last love, and a love I want to hold onto.</p>
+<p class="letter-line">Happy Birthday, beautiful. ❤️</p>
+<div class="letter-sign">Forever yours,<br>Anas</div>
+</div>
+<br><br>
+<button onclick="startLetter(); goTo('memory')">Continue ❤️</button>
+</div>
+</section>
+
+<section id="memory">
+<div class="content">
+<h2 class="memory-title">A Memory Is Waiting...</h2>
+<p class="memory-subtitle">Some things are worth opening slowly.<br>Tap the card to reveal one.</p>
+<div class="memory-card" id="memoryCard">
+<div class="memory-cover"><div class="lock">🔐</div><p>Tap below to unlock this memory</p></div>
+<div class="memory-content">
+<div class="memory-number" id="memoryNumber">MEMORY 01</div>
+<div class="memory-text" id="memoryText">The best memories are not always the biggest moments... sometimes they are simply the moments where being together felt enough.</div>
+<div class="memory-heart">❤️</div>
+</div>
+</div>
+<button id="memoryButton" onclick="revealMemory()">Reveal Memory ✨</button>
+<div class="memory-counter" id="memoryCounter">1 / 4</div>
+<br><br>
+<button onclick="goTo('final')">Final Surprise ❤️</button>
+</div>
+</section>
+
+<section id="final">
+<div class="content">
+<div class="final-heart">❤️</div>
+<h1 class="final-title">Happy Birthday,<br><span>Samiya</span></h1>
+<p class="final-text">I hope this year brings you everything your heart wishes for.<br><br>And if I could make one wish for myself, it would simply be to keep making beautiful memories with you.<br><br>No matter where life takes us, you will always have a special place in my heart.</p>
+<div class="signature">With all my love,<br>Anas ❤️</div>
+</div>
+</section>
+
+<script>
+function goTo(id){document.getElementById(id).scrollIntoView({behavior:"smooth"});}
+
+const messages=[
+"You make ordinary moments feel special.",
+"Your smile will always have a special place in my heart.",
+"No matter how much time passes, you will always be special to me.",
+"If I had to choose again, I would still choose you. ❤️"
+];
+
+function showMessage(index){document.getElementById("hiddenMessage").innerText=messages[index];}
+
+function answer(choice){
+const text=document.getElementById("answerText");
+if(choice===0) text.innerText="Yes... your smile is one of my favourite things about you. ❤️";
+if(choice===1) text.innerText="Your heart is beautiful... and that's what makes you so special to me. ❤️";
+if(choice===2) text.innerText="You got it. There was never really a wrong answer... I love everything about you. ❤️";
+}
+
+function startLetter(){
+document.querySelectorAll(".letter-line").forEach((line,index)=>{
+setTimeout(()=>line.classList.add("show"),index*700);
+});
+}
+
+const memories=[
+"The best memories are not always the biggest moments... sometimes they are simply the moments where being together felt enough.",
+"Some moments pass in seconds, but somehow stay in the heart forever. I hope we create many more of those.",
+"If I could keep one thing from every beautiful day, it would be the feeling of having you beside me.",
+"And maybe the most beautiful memory is not behind us yet... maybe it is still waiting for us."
+];
+
+let memoryIndex=0;
+
+function revealMemory(){
+const card=document.getElementById("memoryCard");
+const button=document.getElementById("memoryButton");
+const text=document.getElementById("memoryText");
+const number=document.getElementById("memoryNumber");
+const counter=document.getElementById("memoryCounter");
+
+if(!card.classList.contains("revealed")){
+card.classList.add("revealed");
+button.innerText="Next Memory ❤️";
+return;
+}
+
+memoryIndex++;
+if(memoryIndex>=memories.length) memoryIndex=0;
+
+card.classList.remove("revealed");
+setTimeout(()=>{
+text.innerText=memories[memoryIndex];
+number.innerText="MEMORY 0"+(memoryIndex+1);
+counter.innerText=(memoryIndex+1)+" / "+memories.length;
+},400);
+}
+
+function celebrate(){
+for(let i=0;i<120;i++){
+let piece=document.createElement("div");
+piece.className="confetti";
+piece.style.left=Math.random()*100+"vw";
+piece.style.animationDelay=Math.random()*2+"s";
+piece.style.background=["#ff4f81","#ffd166","#ffffff","#c77dff","#ff8fab"][Math.floor(Math.random()*5)];
+document.body.appendChild(piece);
+setTimeout(()=>piece.remove(),5000);
+}
+setTimeout(()=>goTo("game"),1800);
+}
+</script>
+</body>
+</html>
